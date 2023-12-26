@@ -1,7 +1,6 @@
 "use strict";
 class StringBuilder {
   #value;
-  initialValue;
   constructor(initialValue) {
     this.#value = initialValue;
   }
@@ -10,17 +9,14 @@ class StringBuilder {
   }
   padEnd(str) {
     this.#value += str;
-    return this.#value;
   }
 
   padStart(str) {
     this.#value = str + this.#value;
-    return this.#value;
   }
 
   padBoth(str) {
     this.#value = str + this.#value + str;
-    return this.#value;
   }
 }
 
